@@ -1,0 +1,74 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    background-image: linear-gradient(white);
+    color: black;
+    
+}
+
+header p {
+    color: rgb(97, 94, 94);
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/tylijura-ai-generated-8775234.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+main section {
+    width: 20%;
+    min-width: 220px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.section1 {
+    background-color: rgb(140, 128, 209);
+}
+
+.section2 {
+    background-color: rgb(140, 128, 209);
+}
+
+.section3 {
+    background-color: rgb(140, 128, 209);
+}
+
+ .boton {
+    background-color: green;
+    color: white;
+    padding: 0.5%;
+    border-radius: 100%;
+    text-decoration: none;
+ }
