@@ -1,47 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORFOLIO</title>
+    <title>Mi Portafolio - Brigit Mejia Ramos</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header class="hero-section">
-        <h1> <em>Brigit Mejia Ramos</em> </h1>
-        <p> Desarrolladora Web en formación</p>
+
+    <header class="page-header">
+        <div class="top-nav">
+            <div class="nav-logo">
+                <strong>Brigit Mejia Ramos</strong>
+            </div>
+            
+            <button id="toggle-menu" class="hamburguesa" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+            
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="theme-switcher">
+                <button id="theme-toggle" onclick="toggleTheme()">Modo oscuro</button>
+            </div>
+        </div>
+
+        <section class="hero-section">
+            <img class="hero-image" src="/img/tylijura-ai-generated-8775234 (1).png" alt="Imagen de portada" />
+            <div class="hero-content">
+                <h1>Brigit Mejia Ramos</h1>
+                <p>Desarrolladora Web en formación</p>
+            </div>
+        </section>
     </header>
 
     <main>
-        <section class="section1">
-            <h2><em>Sobre mi</em></h2>
-            <p> ¡Hola! Soy Brigit. Me encanta la idea de construir cosas desde cero que otras personas puedan usar. Actualmente estoy practicando a diario con <strong>HTML, CSS y JavaScript</strong>.</p>
-            <p>Me gusta que las cosas funcionen bien y se vean ordenadas, por eso siempre trato de documentar mis procesos y mantener mis repositorios en GitHub organizados.</p>
+        
+        <section class="section" id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <div class="about-content">
+                <img class="about-photo" src="/img/imagen brigit.jpeg" alt="Foto de Brigit">
+                
+                <div class="about-text">
+                    <p>¡Hola! Soy Brigit. Me encanta la idea de construir cosas desde cero que otras personas puedan usar. Actualmente estoy practicando a diario con <strong>HTML, CSS y JavaScript</strong>.</p>
+                    <p>Me gusta que las cosas funcionen bien y se vean ordenadas, por eso siempre trato de documentar mis procesos y mantener mis repositorios en GitHub organizados.</p>
+                    
+                    <div class="skills-container">
+                        <h3>Mis herramientas</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section2">
-            <h2><em>Mis Herramientas</em></h2>
-            <ul class="skills-list">
-                <li>HTML.</li>
-                <li>CSS.</li>
-                <li>JavaScript.</li>
-                <li>Git</li>
-                <li>GitHub</li>
-            </ul>
+        <section class="section" id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <h3>Formularios de contacto</h3>
+                    <p>Diseño de formulario contacto interactivo para reservas y portafolios, con responsive.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Tarjetas profesionales</h3>
+                    <p>Colección de tarjetas digitales con animaciones suaves y estructura adaptable para portafolios personales.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>PokeApi</h3>
+                    <p>Este proyecto fue diseñado para demostrar habilidades en el consumo de APIs RESTful y el manejo de datos asíncronos.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Blog creativo</h3>
+                    <p>Maqueta de blog con tarjetas de contenido, enlaces destacados y estilo moderno pensado para escritores y diseñadores.</p>
+                </div>
+                
+            </div>
         </section>
 
-        <section class="section3">
-            <h2><em>Mis Proyectos</em></h2>
-            <ol>
-                <li>Formularios</li>
-                <li>Tarjetas Profesionales</li>
-                <li>Pagina Web</li>
-            </ol>
+        <section class="section" id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-grid">
+                
+                <div class="contact-info">
+                    <h3>¿Hablamos?</h3>
+                    <p>Escríbeme para colaborar en proyectos o simplemente para compartir ideas de desarrollo.</p>
+                    <p><strong>Email:</strong> <a href="mailto:brigithmejia2017@gmail.com">brigithmejia2017@gmail.com</a></p>
+                    <p><strong>Ubicación:</strong> Málaga, España</p>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/BrigitMejia101518" target="_blank">GitHub 🌐</a>
+                        <a href="https://www.linkedin.com/in/brigit-viviana-mejia-ramos-34b013351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn 💼</a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" action="#" method="post">
+                    <label for="contact-name">Nombre</label>
+                    <input id="contact-name" name="name" type="text" placeholder="Tu nombre" required>
+                    
+                    <label for="contact-email">Email</label>
+                    <input id="contact-email" name="email" type="email" placeholder="tu@email.com" required>
+                    
+                    <label for="contact-message">Mensaje</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                    
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+                
+            </div>
         </section>
     </main>
 
-    <footer class="tarjeta__footer">
-        <a class="boton" href="https://github.com/BrigitMejia101518">GitHub</a>
+    <footer class="footer">
+        <div class="footer-block">
+            <span>Brigit Mejia Ramos</span>
+        </div>
+
+        <div class="footer-block">
+            <a href="https://github.com/BrigitMejia101518" target="_blank">GitHub 🌐</a>
+            <a href="https://www.linkedin.com/in/brigit-viviana-mejia-ramos-34b013351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn 💼</a>
+        </div>
+
+        <div class="footer-block">
+            <span>&copy; 2026</span>
+        </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
